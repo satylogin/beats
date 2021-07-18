@@ -9,8 +9,7 @@ where
 {
     let args = Arc::new(args);
     thread::spawn(move || loop {
-        let args = Arc::clone(&args);
-        callback(args);
+        callback(Arc::clone(&args));
         thread::sleep(interval);
     });
 }
