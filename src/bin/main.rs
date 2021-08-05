@@ -1,3 +1,3 @@
 fn main() {
-    beats::simulate(4);
+    beats::simulate(2);
 }
